@@ -1,6 +1,6 @@
 # Projetos em Python em construção.
 # primeiro projeto simulador de dado com resultados random de 1 a 6
-*<h2> Programa 1{
+<h3> Programa 1{</h3>
 * Def inical para dar valor as variaveis e criar o layout da janela que sera craiada
 * layout
 * Inicia o programa e pede os inputs de entrada para realizar a geração do dado
