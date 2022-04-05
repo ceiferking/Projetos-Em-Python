@@ -1,5 +1,4 @@
 # Projetos em Python em construção.
-# primeiro projeto simulador de dado com resultados random de 1 a 6
 <h3> Programa 1{</h3>
 
 * Def inicial para dar valor as variáveis e criar o layout da janela que sera criada.
