@@ -58,8 +58,6 @@ class ChuteONumero:
         except:
             print('Favor digitar apenas números!')
             self.Iniciar()
-        
-        
             
     # Chama novamente os valores de checagem da janela
     def LerValoresDaTela(self):
