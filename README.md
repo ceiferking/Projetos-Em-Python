@@ -1,4 +1,5 @@
 # Projetos em Python em construção.
+Python Version 3.10.2
 <h3> Programa 1{</h3>
 
 * Def inicial para dar valor as variáveis e criar o layout da janela que sera criada.
