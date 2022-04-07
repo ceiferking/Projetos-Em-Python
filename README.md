@@ -14,7 +14,7 @@ Python Version 3.10.2
 
 <h3> Programa 2{</h3>
 
-* ++New implementation++ Tela com campo para digitar o valor do chute e botao para confirmar seu palpite.
+* Tela com campo para digitar o valor do chute e botao para confirmar seu palpite.
 * Objetivo: Criar um algorítimo que gera um valor aleatório onde eu tenha que ficar tentando acertar o número gerado até estar correto.
 * Def inicial para dar valor mínimo, máximo e as variáveis necessárias.
 * Def Iniciar responsável pela função geral do algoritmo.
