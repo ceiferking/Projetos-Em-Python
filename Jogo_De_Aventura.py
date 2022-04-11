@@ -1,8 +1,9 @@
 # Projeto - Jogo de aventura
 # Um jogo de decisões onde terei que criar varios finais baseados nas respostas que forem dadas.
 
-from ast import While
+from ast import For, While
 from fileinput import close
+from time import sleep
 import PySimpleGUI as sg
 
 
@@ -12,6 +13,8 @@ class JogoAventura:
         self.pergunta1 = 'Você nasceu no norte ou no sul? (n/s)' # norte = LadoA, sul = LadoB
         self.pergunta2 = 'Você prefere a espada ou escudo? (espada/escudo)' # espada = Lado1, escudo Lado = Lado2
         self.pergunta3 = 'Qual é a sua especialidade? (linha de frente/tatico)' # linha de frente = Lado1, tático = lado2
+        self.digite1 = 'Digite Apenas as respostas dentro dos parenteses ao lado da pergunta.'
+        self.digite2 = 'Por favor reinicie apertando no botão iniciar e responda corretamente.'
         self.finalHistoria1 = 'Você será um heroi na linha de frente!'
         self.finalHistoria2 = 'Você será um heroi protegendo todas as nossas tropas!'
         self.finalHistoria3 = 'Você irá se sacrificar na batalha!'
@@ -20,7 +23,7 @@ class JogoAventura:
     def Iniciar(self):
         # Layout
         self.layout = [
-            [sg.Output(size=(45,10),key='resposta')],
+            [sg.Output(size=(60,10),key='resposta')],
             [sg.Input(size=(25,0),key='escolha')],
             [sg.Button('Iniciar'),sg.Button('Responder')]
         ]
@@ -40,6 +43,7 @@ class JogoAventura:
                         print(self.finalHistoria1)
                     if self.valores['escolha'] == 'escudo':
                         print(self.finalHistoria2)
+
                 if self.valores['escolha'] == 's':
                     print(self.pergunta3)
                     self.LerValores()
@@ -47,6 +51,10 @@ class JogoAventura:
                         print(self.finalHistoria3)
                     if self.valores['escolha'] == 'tatico':
                         print(self.finalHistoria4)
+                else:
+                    print(self.digite1)
+                    sleep(1)
+                    print(self.digite2)
             else:
                 break
     
