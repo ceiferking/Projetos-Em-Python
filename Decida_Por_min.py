@@ -1,9 +1,10 @@
-# Faça uma pergunta para o programa e ele tera que lhe dar uma resposta.
+# Faça uma pergunta para o programa e ele tera que lhe dar uma resposta aleatório.
 from fileinput import close
 import random
 import PySimpleGUI as sg
 
 class DecidaPorMin():
+    # Função inicial para dar as opões de respostas aleatórias.
     def __init__(self):
         self.respostas = [
             'Com certeza, você deve fazer isso!',
@@ -13,7 +14,7 @@ class DecidaPorMin():
         ]
         
     def Iniciar(self):
-        # Layout
+        # Layout da janela
         self.layout = [
             [sg.Text('Faça uma pergunta: ')],
             [sg.Input()],
